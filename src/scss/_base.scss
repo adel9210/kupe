@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    color: inherit;
+}
+
+html {
+    font-family: "Playfair Display", serif;
+    font-size: 62.5%; // 10px
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-white;
+}
+
+// reset anchor default styling
+a {
+    text-decoration: none;
+}
