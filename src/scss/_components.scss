@@ -66,6 +66,10 @@
       animation: topBottom 1s infinite alternate;
     }
   }
+
+  .close-btn {
+    display: none;
+  }
 }
 // Header End
 
@@ -167,6 +171,10 @@
       top: 5px;
     }
 
+    & .close-btn {
+      display: block;
+    }
+    
     &.isMobile {
       & {
         left: 0;
