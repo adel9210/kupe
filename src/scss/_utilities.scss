@@ -10,7 +10,16 @@
     text-align: center;
 }
 
+.u-v-center {
+    transform: translateY(50%);
+}
 .u-50 {
     display: block;
+    width: 50%;
+}
+.u-w-40 {
+    width: 40%;
+}
+.u-w-50 {
     width: 50%;
 }

@@ -6,9 +6,12 @@
   background-size: cover;
   position: relative;
 
+  &--about {
+    background-image: url(../images/about.png);
+  }
+
   .logo {
     width: 200px;
-    // height: 70px;
 
     &__img {
       width: 100%;
@@ -40,6 +43,10 @@
     &__link {
       font-size: 2.5rem;
       display: inline-block;
+
+      &--active {
+        border-bottom: 2px solid $color-primary;
+      }
     }
   }
 
@@ -48,7 +55,9 @@
     width: 100%;
 
     position: absolute;
-    bottom: 0;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .scroll-icon {
       display: block;
@@ -60,16 +69,20 @@
 }
 // Header End
 
-// Main Start
+// Main
 .main {
   background-color: $color-grey;
   background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%), url(../images/main.png);
-
+  &--about {
+    background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%),
+      url(../images/about-layout.png);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
   background-size: cover;
   background-position: 70%;
   padding: 50px;
 }
-// Main End
 
 // Backdrop
 .backdrop::after {
@@ -166,9 +179,6 @@
     display: block;
   }
 
-  .header .welcome {
-    bottom: 10%;
-  }
   .main {
     padding: 20px;
   }

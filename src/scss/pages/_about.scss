@@ -1,0 +1,88 @@
+.about {
+    .mission-vesion {
+        font-size: 260px;
+        color: #fff;
+        position: relative;
+        line-height: 1;
+        height: 420px;
+    }
+    .mission {
+        position: absolute;
+        right: 0;
+        opacity: 0.7;
+        z-index: 99999;
+        text-transform: uppercase;
+    }
+    .vision {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.8;
+        text-transform: uppercase;
+    }
+    .values {
+        font-size: 260px;
+        color: $color-white;
+        text-align: right;
+
+        span {
+            opacity: 0.7;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        .mission-vesion {
+            height: 300px;
+
+            .mission {
+                font-size: 15rem;
+            }
+            .vision {
+                font-size: 15rem;
+            }
+        }
+        .heading--forthy {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        .mission-vesion {
+            height: 280px;
+
+            .mission {
+                font-size: 15rem;
+            }
+            .vision {
+                font-size: 15rem;
+            }
+        }
+        .values {
+            font-size: 15rem;
+        }
+        .heading--forthy {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        .mission-vesion {
+            height: 150px;
+            .mission,
+            .vision {
+                font-size: 6rem;
+            }
+        }
+        .values {
+            font-size: 6rem;
+        }
+    }
+}
