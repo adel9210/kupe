@@ -28,3 +28,12 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .form {
+
+        &__input {
+            width: 100%;
+        }
+    }
+}

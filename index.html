@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kupe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dest/css/main.min.css">
 </head>
 
@@ -16,7 +16,14 @@
             <img src="dest/images/logo.png" alt="logo" class="logo__img">
         </div>
 
+        <h2 class="toggle-button toggle-side-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </h2>
+
         <nav class="nav">
+            <a href="#" class="toggle-side-menu">X</a>
             <ul class="nav__items">
                 <li class="nav__item">
                     <a href="#" class="nav__link">Home</a>
@@ -44,7 +51,9 @@
             <h1 class="heading--primary">Welcome To TheKupe.</h1>
             <h2 class="heading--secondary u-margin-bottom-small">our Focus is u</h2>
             <button class="button button--primary u-margin-bottom-small">Getting started</button>
-            <img src="dest/images/scroll-icon.png" alt="scroll" class="scroll-icon">
+            <a href="#whoWeAre">
+                <img src="dest/images/scroll-icon.png" alt="scroll" class="scroll-icon">
+            </a>
         </div>
 
     </header>
@@ -53,7 +62,7 @@
     <main class="main">
 
         <!-- Who we are Start -->
-        <section class="who-are-we u-margin-bottom-big">
+        <section class="who-are-we u-margin-bottom-big" id="whoWeAre">
             <h2 class="heading--tertiary u-margin-bottom-big">Who Are We?</h2>
             <p class="heading--forthy">
                 TheKupe is a young company with entrepreneurial spirit and determination inspired by members’ success.
@@ -63,7 +72,7 @@
             <p class="heading--forthy">
                 We believe in Creativity without limits, Aesthetics with Functionality and Quality without
                 comproimisations.
-            </div>
+                </div>
             <p class="heading--forthy">
                 With more than 50 years of combined experience of our consultancy team in Financial and IT business, we
                 understand how to digitally transform internal activities and reduce OBEX to maximize profit.
@@ -112,8 +121,8 @@
         <section class="our-services u-margin-bottom-big u-text-center">
             <h2 class="heading--tertiary u-margin-bottom-big">Our Services</h2>
             <p class="heading--forthy">
-                While our consultancy team and expertise are spending their time to create and enhance products that 
-                suit your needs, yet they are pleased to avail more time to spend by your side to act as your Fintech 
+                While our consultancy team and expertise are spending their time to create and enhance products that
+                suit your needs, yet they are pleased to avail more time to spend by your side to act as your Fintech
                 advisor and your professional service consultant.
             </p>
         </section>
@@ -121,36 +130,37 @@
 
 
         <!-- Contact Us Start -->
-            <section class="contact-us">
-                <h2 class="heading--tertiary">Contact Us</h2>
-                <p class="heading--forthy">Send us a quick message!</p>
+        <section class="contact-us">
+            <h2 class="heading--tertiary">Contact Us</h2>
+            <p class="heading--forthy">Send us a quick message!</p>
 
-                <form action="#" class="form">
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Your Name">
-                    </div>
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Your Email">
-                    </div>
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Your Subject">
-                    </div>
-                    <div class="form__group">
-                        <textarea  class="form__input" placeholder="Your Message" rows="10"></textarea>
-                    </div>
-                    
-                    <div class="form__group u-text-center u-50">
-                        <button class="button button--primary">Submit</button>
-                    </div>
-                    
-                </form>
-            </section>
+            <form action="#" class="form">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Your Name">
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Your Email">
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Your Subject">
+                </div>
+                <div class="form__group">
+                    <textarea class="form__input" placeholder="Your Message" rows="5"></textarea>
+                </div>
+
+                <div class="form__group u-text-center u-50">
+                    <button class="button button--primary">Submit</button>
+                </div>
+
+            </form>
+        </section>
         <!-- Contact Us End -->
 
 
     </main>
 
 
+    <script src="dest/js/app.js"></script>
 </body>
 
 </html>

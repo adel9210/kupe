@@ -8,10 +8,11 @@
 }
 
 html {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", 'serif';
     font-size: 62.5%; // 10px
     line-height: 1.6;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {

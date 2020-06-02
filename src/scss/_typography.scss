@@ -24,3 +24,23 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .heading {
+        &--primary {
+            font-size: 3.8rem;
+        }
+    
+        &--secondary {
+            font-size: 3.1rem;
+        }
+    
+        &--tertiary {
+            font-size: 2rem;
+        }
+    
+        &--forthy {
+            font-size: 1.5rem;
+        }
+    }
+}
