@@ -91,6 +91,7 @@
 
 // toggle button
 .toggle-button {
+  display: none;
   position: absolute;
   top: 40px;
   right: 20px;
@@ -161,6 +162,13 @@
     }
   }
 
+  .toggle-button {
+    display: block;
+  }
+
+  .header .welcome {
+    bottom: 10%;
+  }
   .main {
     padding: 20px;
   }
