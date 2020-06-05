@@ -7,3 +7,7 @@ function toggleSideMenu() {
     document.querySelector('body').classList.toggle('backdrop');
     document.querySelector('nav').classList.toggle('isMobile');
 }
+
+window.addEventListener('load', () => {
+    document.querySelector('.loader').classList.remove('show');
+})

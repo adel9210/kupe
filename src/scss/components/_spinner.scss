@@ -1,0 +1,60 @@
+@keyframes loader__animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    background: $color-white;
+
+    &__spin {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; /* see note above */
+
+        .logo__img {
+            width: 65%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        div {
+            position: absolute;
+            animation: loader__animation 1s linear infinite;
+            width: 200px;
+            height: 200px;
+            top: 25px;
+            left: 25px;
+            border-radius: 50%;
+            box-shadow: 0 5px 0 0 #e15b64;
+            transform-origin: 100px 102.5px;
+        }
+    }
+
+    &.show {
+        display: flex;
+    }
+}
