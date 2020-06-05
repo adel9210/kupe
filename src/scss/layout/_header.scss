@@ -19,6 +19,13 @@
         margin: 30px;
       }
     }
+
+    .logo {
+      width: 200px;
+      &-img--u {
+        height: 40px;
+      }
+    }
   
     .nav {
       transition: all 0.5s;
