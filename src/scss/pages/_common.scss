@@ -1,6 +1,16 @@
+.header {
+  &__title {
+      
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .main {
   background-size: cover;
   background-position: 70%;
+  padding: 50px;
 }
 
 @media screen and (max-width: 768px) {

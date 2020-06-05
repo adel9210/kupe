@@ -1,11 +1,13 @@
 .about {
     .mission-vesion {
-        font-size: 260px;
+        font-size: 15rem;
         color: #fff;
         position: relative;
         line-height: 1;
-        height: 420px;
+        height: 250px;
+        margin-bottom: 70px;
     }
+
     .mission {
         position: absolute;
         right: 0;
@@ -13,15 +15,16 @@
         z-index: 99999;
         text-transform: uppercase;
     }
+
     .vision {
         position: absolute;
-        left: 0;
+        right: 41%;
         bottom: 0;
         opacity: 0.8;
         text-transform: uppercase;
     }
     .values {
-        font-size: 260px;
+        font-size: 15rem;
         color: $color-white;
         text-align: right;
 
@@ -41,13 +44,13 @@
 @media screen and (max-width: 1200px) {
     .about {
         .mission-vesion {
-            height: 300px;
+            height: 200px;
 
             .mission {
-                font-size: 15rem;
+                font-size: 10rem;
             }
             .vision {
-                font-size: 15rem;
+                font-size: 10rem;
             }
         }
         .heading--forthy {
@@ -60,17 +63,17 @@
 @media screen and (max-width: 768px) {
     .about {
         .mission-vesion {
-            height: 280px;
+            height: 150px;
 
             .mission {
-                font-size: 15rem;
+                font-size: 8rem;
             }
             .vision {
-                font-size: 15rem;
+                font-size: 8rem;
             }
         }
         .values {
-            font-size: 15rem;
+            font-size: 8rem;
         }
         .heading--forthy {
             width: 100%;
@@ -82,7 +85,7 @@
 @media screen and (max-width: 480px) {
     .about {
         .mission-vesion {
-            height: 150px;
+            height: 120px;
             .mission,
             .vision {
                 font-size: 6rem;

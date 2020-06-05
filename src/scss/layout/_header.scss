@@ -1,6 +1,6 @@
 // Header Start
 .header {
-    height: 100vh;
+    height: 103vh;
     background-color: $color-grey;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)), url("../images/hero.png");
     background-size: cover;
@@ -60,12 +60,7 @@
     .welcome {
       text-align: center;
       width: 100%;
-  
-      position: absolute;
-      top: 65%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  
+
       .scroll-icon {
         display: block;
         height: 35px;
