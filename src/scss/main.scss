@@ -1,9 +1,10 @@
-@import './variables';
-@import './base';
-@import './utilities';
-@import './animation';
-@import './form';
-@import './typography';
-@import './buttons';
-@import './components';
-@import './pages/about';
+// abstarct
+@import "./abstract/variables", "./abstract/animation", "./abstract/utilities";
+// base
+@import "./base/base", "./base/typography";
+// components
+@import "./components/backdrop", "./components/buttons", "./components/form", "./components/side-menu-button";
+// layout
+@import "./layout/header", "./layout/footer";
+// pages
+@import "./pages/home", "./pages/about", "./pages/common";

@@ -1,0 +1,124 @@
+// Header Start
+.header {
+    height: 100vh;
+    background-color: $color-grey;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)), url("../images/hero.png");
+    background-size: cover;
+    position: relative;
+  
+    &--about {
+      background-image: url(../images/about.png);
+    }
+  
+    .logo {
+      width: 200px;
+  
+      &__img {
+        width: 100%;
+        height: 100%;
+        margin: 30px;
+      }
+    }
+  
+    .nav {
+      transition: all 0.5s;
+      &__items {
+        list-style: none;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      &__item {
+        margin-right: 28px;
+        transition: all 0.5s;
+        border-bottom: 2px solid transparent;
+  
+        &:hover {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+  
+      &__link {
+        font-size: 2.5rem;
+        display: inline-block;
+  
+        &--active {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+    }
+  
+    .welcome {
+      text-align: center;
+      width: 100%;
+  
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      .scroll-icon {
+        display: block;
+        height: 35px;
+        margin: 0 auto;
+        animation: topBottom 1s infinite alternate;
+      }
+    }
+  
+    .close-btn {
+      display: none;
+    }
+  }
+  // Header End
+  
+
+  @media screen and (max-width: 768px) {
+    .header .nav {
+      left: -300px;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      z-index: 99999;
+      height: 100vh;
+  
+      &__items {
+        flex-direction: column;
+        margin-top: 50px;
+      }
+  
+      &__item {
+        display: block;
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        padding: 5px 20px;
+        margin-right: 0 !important;
+        background-color: $color-primary-light;
+        margin-bottom: 5px;
+      }
+  
+      &__link {
+        font-size: 2rem;
+      }
+  
+      & .toggle-side-menu {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+  
+      & .close-btn {
+        display: block;
+      }
+      
+      &.isMobile {
+        & {
+          left: 0;
+          background-color: #333;
+        }
+      }
+    }
+}

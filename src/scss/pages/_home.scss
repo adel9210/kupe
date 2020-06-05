@@ -1,0 +1,108 @@
+// Main
+.main {
+    &--home {
+        background-color: $color-grey;
+        background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%),
+            url(../images/main.png);
+        background-position: 70%;
+        padding: 50px 0;
+
+        .our-info {
+            width: 70vw;
+            height: 300px;
+            margin-bottom: 200px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            // background:
+
+            &__title {
+                font-size: 7rem;
+                font-weight: bold;
+                width: 400px;
+                position: absolute;
+                text-align: center;
+                line-height: 1;
+                top: 50px;
+            }
+
+            &__details {
+                font-size: 2rem;
+                font-weight: 100;
+                width: 70%;
+                text-align: left;
+
+                position: absolute;
+                bottom: 30px;
+            }
+
+            &--right {
+                margin-left: auto;
+
+                .our-info__title {
+                    left: -200px;
+                }
+
+                .our-info__details {
+                    right: 30px;
+                }
+            }
+
+            &--left {
+                margin-right: auto;
+
+                .our-info__title {
+                    right: -200px;
+                }
+
+                .our-info__details {
+                    left: 30px;
+                }
+            }
+
+            &--1 {
+                background-image: $gradient-overlay, url(../images/home-img-1.png);
+            }
+
+            &--2 {
+                background-image: $gradient-overlay, url(../images/home-img-2.png);
+            }
+
+            &--3 {
+                background-image: $gradient-overlay, url(../images/home-img-3.png);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main--home {
+        .our-info {
+            width: 100%;
+            margin-bottom: 50px;
+            min-height: 300px;
+
+            &__title {
+                width: 100%;
+                font-size: 3rem;
+                position: unset!important;
+                padding: 30px;
+                text-align: left;
+            }
+
+            &__details {
+                width: 100%;
+                position: unset!important;
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main--home {
+        .our-info {
+            height: 400px;
+        }
+    }
+}

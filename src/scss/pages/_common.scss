@@ -1,0 +1,10 @@
+.main {
+  background-size: cover;
+  background-position: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+      padding: 20px;
+  }
+}
