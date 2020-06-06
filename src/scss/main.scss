@@ -3,8 +3,9 @@
 // base
 @import "./base/base", "./base/typography";
 // components
-@import "./components/backdrop", "./components/buttons", "./components/form", "./components/side-menu-button", "./components/spinner";
+@import "./components/backdrop", "./components/buttons", "./components/form", "./components/side-menu-button",
+    "./components/spinner";
 // layout
 @import "./layout/header", "./layout/footer";
 // pages
-@import "./pages/home", "./pages/about", "./pages/common";
+@import "./pages/home", "./pages/about", "./pages/common", "./pages/product";

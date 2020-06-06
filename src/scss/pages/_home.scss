@@ -1,3 +1,11 @@
+.header {
+    &--home {
+        .header__title {
+            top: 65%;
+        }
+    }
+}
+
 // Main
 .main {
     &--home {

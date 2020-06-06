@@ -1,7 +1,7 @@
 .about {
     .mission-vesion {
         font-size: 15rem;
-        color: #fff;
+        color: $color-white;
         position: relative;
         line-height: 1;
         height: 250px;
@@ -16,6 +16,10 @@
         text-transform: uppercase;
     }
 
+    .getto-knows .mission {
+        left: 0;
+    }
+
     .vision {
         position: absolute;
         right: 41%;
@@ -23,6 +27,8 @@
         opacity: 0.8;
         text-transform: uppercase;
     }
+
+
     .values {
         font-size: 15rem;
         color: $color-white;
