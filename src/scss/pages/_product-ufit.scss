@@ -1,0 +1,14 @@
+.product-ufit-header {
+    @extend .product-ucount-header;
+}
+
+
+
+.main {
+    &--product-ufit {
+        background: $color-black;
+
+        @extend .main--product-ucount;
+    }
+}
+
