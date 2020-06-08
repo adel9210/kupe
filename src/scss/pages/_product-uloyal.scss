@@ -1,0 +1,15 @@
+.product-uloyal-header {
+    @extend .product-ucount-header;
+}
+
+
+
+.main {
+    &--product-uloyal {
+        @extend .main--product-ucount;
+
+        background: $color-grey-dark;
+        min-height: 200vh; // testing 
+    }
+}
+

@@ -7,9 +7,34 @@
   position: relative;
 
   &--about {
-    background-image: url(../images/about.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
+      url(../images/about.png);
   }
-  
+
+  &--contact-us {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)), url(../images/services.png);
+  }
+
+  &--members-area {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
+      url(../images/members-area.png);
+  }
+
+  &--services {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
+      url(../images/services.png);
+  }
+
+  &--product {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
+      url(../images/product.png);
+  }
+
+  &--contact-us {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
+      url(../images/contact-us.png);
+  }
+
   &--product-ucount {
     background: $color-secondary-dark;
   }
@@ -18,12 +43,8 @@
     background: $color-black;
   }
 
-  &--contact-us {
-    background: url(../images/services.png);
-  }
-  
-  &--services {
-    background-image: url(../images/services.png);
+  &--product-uloyal {
+    background: $color-grey-dark;
   }
 
   .logo {
