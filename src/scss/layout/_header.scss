@@ -9,16 +9,22 @@
   &--about {
     background-image: url(../images/about.png);
   }
+  
   &--product-ucount {
     background: $color-secondary-dark;
   }
+
   &--product-ufit {
     background: $color-black;
   }
+
+  &--contact-us {
+    background: url(../images/services.png);
+  }
+  
   &--services {
     background-image: url(../images/services.png);
   }
-
 
   .logo {
     width: 200px;
@@ -67,12 +73,12 @@
           border-bottom: 1px solid $color-black;
           font-size: 1.4rem;
           cursor: pointer;
-          transition: all .3s;
+          transition: all 0.3s;
 
           .child-link {
             display: block;
           }
-          
+
           &:hover {
             background-color: $color-grey;
           }
