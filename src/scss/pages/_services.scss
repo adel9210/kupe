@@ -38,8 +38,9 @@
                             left: 0;
                             top: 0;
                         }
-                        & .title, & .link {
-                            display: none!important;
+                        & .title,
+                        & .link {
+                            display: none !important;
                         }
                     }
                 }
@@ -53,15 +54,16 @@
                 width: 90%;
                 margin: 0 auto;
                 text-align: center;
-                transition: all .5s;
+                transition: all 0.5s;
             }
 
             .title {
+                font-family: "UltraLight", serif;
                 font-size: 2rem;
                 margin-bottom: 10px;
             }
             .details {
-                transition: all .5s;
+                transition: all 0.5s;
                 position: absolute;
                 left: -200%;
                 right: 0;
@@ -88,6 +90,7 @@
         }
         .what-we-serve {
             width: 45%;
+            font-family: "Playfair-Bold", serif;
             font-size: 10rem;
             line-height: 0.8;
             margin-bottom: 20px;
@@ -95,10 +98,9 @@
     }
 }
 
-
-// Media 
-@media screen and (max-width: 768px){
-.main .services {
+// Media
+@media screen and (max-width: 768px) {
+    .main .services {
         &__item {
             width: 100%;
         }

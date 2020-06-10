@@ -1,11 +1,85 @@
+$fontPath: "../font/";
+
 @font-face {
-    font-family: "Futura Light";
-    src: url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.eot");
-    src: url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.svg#Futura Light") format("svg");
+    font-family: "FuturaLight";
+    src: url($fontPath + "FuturaLight.ttf");
+}
+
+@font-face {
+    font-family: "OktaNeue";
+    src: url($fontPath + "OktaNeue-BlackItalic.otf");
+}
+
+@font-face {
+    font-family: "UltraLight";
+    src: url($fontPath + "OktaNeue-UltraLight.otf");
+}
+
+@font-face {
+    font-family: "OktaNeue-BlackItalic";
+    src: url($fontPath + "OktaNeue-BlackItalic.otf");
+}
+
+// Playfair
+
+@font-face {
+    font-family: "Playfair-Black";
+    src: url($fontPath + "Playfair/Black.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-BlackItalic";
+    src: url($fontPath + "Playfair/BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Bold";
+    src: url($fontPath + "Playfair/Bold.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-BoldItalic";
+    src: url($fontPath + "Playfair/BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Extrabold";
+    src: url($fontPath + "Playfair/Extrabold.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-ExtraboldItalic";
+    src: url($fontPath + "Playfair/ExtraboldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Italic";
+    src: url($fontPath + "Playfair/Italic.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Medium";
+    src: url($fontPath + "Playfair/Medium.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-MediumItalic";
+    src: url($fontPath + "Playfair/MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Regular";
+    src: url($fontPath + "Playfair/Regular.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Semibold";
+    src: url($fontPath + "Playfair/Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-SemiboldItalic";
+    src: url($fontPath + "Playfair/SemiboldItalic.ttf");
 }
 
 .heading {
@@ -30,8 +104,7 @@
 
     &--forthy {
         font-family: "Futura Light", serif;
-        font-size: 2.5rem;
-        // text-shadow: 0 3px 6px $color-black;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
 }
