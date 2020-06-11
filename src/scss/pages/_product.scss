@@ -107,6 +107,9 @@
                 opacity: 0.6;
             }
         }
+        .what-we-offer-details {
+            transform: translateY(40%);
+        }
     }
 }
 
@@ -140,6 +143,9 @@
                 display: block;
                 width: 100%;
             }
+        }
+        .what-we-offer-details {
+            transform: none;
         }
     }
 }
