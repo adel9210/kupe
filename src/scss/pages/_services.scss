@@ -32,7 +32,7 @@
                     transition: all 0.5s;
                     position: relative;
 
-                    &:hover {
+                    &.overlay {
                         cursor: pointer;
                         & .details {
                             left: 0;
@@ -74,6 +74,7 @@
                 display: flex;
                 align-items: center;
                 padding: 0 50px;
+                color: $color-grey-dark;
             }
 
             .link {
@@ -86,6 +87,10 @@
                     background-color: $color-white;
                     color: $color-black;
                 }
+            }
+
+            .input {
+                display: none;
             }
         }
         .what-we-serve {

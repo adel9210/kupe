@@ -13,7 +13,7 @@ function toggleSideMenu() {
 // Hide All Active When Click Outside 
 window.addEventListener('click', (event) => {
     if (event.target.closest('.nav__link')) {
-        return ;
+        return;
     }
     // Remove all active item 
     const container = document.querySelectorAll('.nav__item--dropdown')
@@ -39,8 +39,27 @@ function toggleNavItem(e) {
 }
 
 
-
 // Hide Loader 
 window.addEventListener('load', () => {
     document.querySelector('.loader').classList.remove('show');
+})
+
+
+// Service Show overlay on service item 
+var activeElement;
+Array.from(document.querySelectorAll('.services .services__caption .link')).map(element => {
+    element.addEventListener('click', (event) => {
+
+        if (activeElement) {
+            activeElement.classList.remove('overlay');
+        }
+
+        activeElement = event.target.offsetParent;
+        
+        event.target.offsetParent.classList.add('overlay');
+
+
+
+        event.preventDefault();
+    })
 })

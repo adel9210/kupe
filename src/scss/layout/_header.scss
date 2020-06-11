@@ -2,37 +2,55 @@
 .header {
   height: 103vh;
   background-color: $color-grey;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)), url("../images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
+  background-position: center;
   position: relative;
 
   &--about {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
-      url(../images/about.png);
+    background-image: url(../images/about.png);
+
+    .nav__link {
+      color: $color-grey-dark;
+    }
   }
 
   &--contact-us {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)), url(../images/services.png);
+    background-image: url(../images/services.png);
   }
 
   &--members-area {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
-      url(../images/members-area.png);
+    background-image: url(../images/members-area.png);
+    background-size: cover;
+
+    .nav__link {
+      color: $color-grey-dark;
+    }
   }
 
   &--services {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
-      url(../images/services.png);
+    background-image: url(../images/services.png);
+
+    .nav__link {
+      color: $color-grey-dark;
+    }
   }
 
   &--product {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
-      url(../images/product.png);
+    background-image: url(../images/product.png);
+
+    .nav__link {
+      color: $color-grey-dark;
+    }
   }
 
   &--contact-us {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(44, 47, 52, 0.9)),
-      url(../images/contact-us.png);
+    background-image: url(../images/contact-us.png);
+    background-size: cover;
+
+    .nav__link {
+      color: $color-grey-dark;
+    }
   }
 
   &--product-ucount {
@@ -77,21 +95,20 @@
     &__item {
       margin-right: 28px;
       transition: all 0.5s;
-      border-bottom: 2px solid transparent;
       position: relative;
 
       &--dropdown {
         display: none;
         position: absolute;
         z-index: 10;
-        background: $color-white;
-        color: $color-black;
+        background: $color-primary;
+        color: $color-white;
         list-style: none;
         width: 150px;
 
         .child-item {
-          padding: 4px;
-          border-bottom: 1px solid $color-black;
+          padding: 6px;
+          border-bottom: 1px solid $color-secondary;
           font-size: 1.4rem;
           cursor: pointer;
           transition: all 0.3s;
@@ -105,18 +122,37 @@
           }
         }
       }
-
-      &:hover {
-        border-bottom: 2px solid $color-primary;
-      }
     }
 
     &__link {
       font-size: 2.5rem;
       display: inline-block;
+      border-bottom: 2px solid transparent;
+      position: relative;
 
       &--active {
-        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
+        // border-bottom: 2px solid $color-primary;
+      }
+      &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &--active::after {
+        width: 30px;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
       }
     }
   }
