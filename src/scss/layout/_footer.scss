@@ -27,6 +27,20 @@
         color: $color-white;
     }
 
+    &--services, &--members-area, &--contact-us {
+        color: $color-white;
+    }
+
+    &--members-area {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+
+        .copy-rights {
+            width: 50%;
+        }
+    }
     
     &--product-uloyal {
         width: 100%;
@@ -42,5 +56,18 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .footer {
+        .copy-rights {
+            width: 50%;
+        }
+        
+        &::before {
+            width: 50%;
+        }
     }
 }

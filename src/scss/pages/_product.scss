@@ -1,7 +1,6 @@
 .main {
     &--product {
-        background: linear-gradient(0deg, $color-white 70%, #32323ae0 78%, #32323ad1 89%, #2d3034 100%),
-            url(../images/about-layout.png);
+        background: linear-gradient(0deg, #fff 70%, #33363c 100%, #33353a 98%), url(../images/about-layout.png);
         background-position: 50% 50%;
     }
 
@@ -37,7 +36,7 @@
 
             .info {
                 font-family: "UltraLight", serif;
-                min-width: 25%;
+                min-width: 300px;
                 margin-right: 5%;
 
                 .wrapper {
@@ -159,9 +158,16 @@
                 }
             }
             .info {
-                width: 100%;
+                // width: 100%;
                 margin-left: 0;
                 margin-right: 0;
+
+                .wrapper {
+                    width: 200px;
+                    min-height: 200px;
+                    border-radius: 20px;
+                    margin: 0 auto;
+                }
             }
         }
     }

@@ -1,7 +1,6 @@
 .main {
     &--services {
-        background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%),
-            url(../images/services.png);
+        background-image: linear-gradient(0deg, #9595a2 0%, #32323ae0 9%, #32323ad1 69%, #3a3b3f 100%),
         // background-position: 50% 50%;
     }
 

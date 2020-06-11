@@ -55,10 +55,8 @@ Array.from(document.querySelectorAll('.services .services__caption .link')).map(
         }
 
         activeElement = event.target.offsetParent;
-        
+
         event.target.offsetParent.classList.add('overlay');
-
-
 
         event.preventDefault();
     })

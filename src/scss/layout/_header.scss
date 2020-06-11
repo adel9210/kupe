@@ -193,7 +193,7 @@
       display: block;
       width: 100%;
       margin: 0;
-      color: #fff;
+      color: $color-white;
       padding: 5px 20px;
       margin-right: 0 !important;
       background-color: $color-primary-light;
@@ -202,6 +202,7 @@
 
     &__link {
       font-size: 2rem;
+      color: $color-white;
     }
 
     & .toggle-side-menu {

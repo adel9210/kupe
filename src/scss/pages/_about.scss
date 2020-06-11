@@ -34,7 +34,6 @@
         }
     }
 
-
     .values {
         font-family: "Playfair-Bold", serif;
         font-size: 15rem;
@@ -48,9 +47,23 @@
 }
 .main {
     &--about {
-        background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%),
-            url(../images/about-layout.png);
+        // background: linear-gradient(0deg, $color-white 0%, #32323ae0 9%, #32323ad1 69%, #2d3034 100%),
+        // url(../images/about-layout.png);
+        background-image: linear-gradient(to bottom, #383a40 20%, #ffffffe0);
         background-position: 50% 50%;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url(../images/about-layout.png);
+            width: 100%;
+            height: 100%;
+            background-size: 140%;
+            background-position: -40% 0%;
+        }
     }
 }
 
