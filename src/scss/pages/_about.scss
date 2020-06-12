@@ -44,6 +44,10 @@
             opacity: 0.7;
         }
     }
+
+    .heading--forthy {
+        font-family: "UltraLight", serif; // overwrite font family
+    }
 }
 .main {
     &--about {
