@@ -14,6 +14,8 @@
                 font-family: "UltraLight", serif;
                 font-size: 5rem;
                 color: #444444;
+                position: relative;
+                top: 35px;
             }
 
             .img {
@@ -72,6 +74,8 @@
 
                 & > p {
                     font-family: "UltraLight", serif;
+                    color: #03012b;
+                    font-size: 2.3rem;
                 }
 
                 .learn-more {
